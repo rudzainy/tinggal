@@ -57,9 +57,9 @@ Agent.create!([
 			email: Faker::Internet.email,
 	  	password: "123456",
 	  	gender: ["male", "female"].sample,
-	  	age_range: "20-30",
-	  	maritial_status: "single",
-	  	salary: "10000",
+	  	age_range: "min #{rand(20..60)}",
+	  	maritial_status: ["single", "married", "unknown"].sample,
+	  	salary: "#{rand(10..150)}00",
 	  	user_type: "user"
 	  }
 	])
