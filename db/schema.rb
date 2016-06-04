@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160604142452) do
+ActiveRecord::Schema.define(version: 20160604175143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "agents", force: :cascade do |t|
     t.string "agent_id"
+    t.string "email"
   end
 
   create_table "list_users", force: :cascade do |t|
@@ -90,6 +91,7 @@ ActiveRecord::Schema.define(version: 20160604142452) do
     t.string   "maritial_status"
     t.integer  "salary"
     t.string   "user_type"
+    t.string   "location"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", using: :btree

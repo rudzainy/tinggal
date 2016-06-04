@@ -26,7 +26,7 @@ class Api::V1::UsersController < Api::V1::ApplicationController
     end
   end
 
-  # http://tinggal.herokuapp.com/api/v1/update_user
+  # http://tinggal.herokuapp.com/api/v1/update_user?email=email
 
   def update
     user = User.find_by_email(params[:email])
