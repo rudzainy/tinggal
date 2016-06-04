@@ -27,6 +27,7 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     else
       render json: { success: 'false' , message: "Listing not found", status: 400 }
     end
+  end
 
   private
 
