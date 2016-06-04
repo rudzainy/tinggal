@@ -26,10 +26,16 @@ class Api::V1::UsersController < Api::V1::ApplicationController
     end
   end
 
+  # http://tinggal.herokuapp.com/api/v1/update_user
+
   def update
     user = User.find_by_email(params[:email])
-    user.update(update_params)
-    render(json: Api::V1::UserSerializer.new(user).to_json)
+    if user
+      user.update(update_params)
+      render json: { success: 'true' , message: 'Successfully updated user', status: 200 }
+    else
+      render json: { success: 'false' , message: 'Update failed', status: 400 }
+    end
   end
 
   private

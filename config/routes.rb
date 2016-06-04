@@ -5,8 +5,8 @@ get '/', to: 'static#index'
 namespace :api do
     namespace :v1 do
       get '/register', to: 'users#create'
+      get '/update_user', to: 'users#update'
       get '/login', to: 'sessions#create'
-      # post '/job_applications', to: 'job_applications#create'
     end
   end
 end
