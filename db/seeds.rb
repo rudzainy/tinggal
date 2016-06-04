@@ -26,3 +26,6 @@ File.open('propertyType.json', 'r') do |file|
   end
 end
 
+User.create!([
+  { username: "Rudzainy", email: "rudzainy@rudzainy.com", password: "123456", gender: "male", age_range: "20-30", maritial_status: "single", salary: "10000", user_type: "user" }
+])

@@ -5,7 +5,7 @@ class Api::V1::SessionsController < Api::V1::ApplicationController
   def create
     if params[:reg_type] == "0" # user registered using email
     	if verify_user(params[:email], params[:password])
-    		render json: { success: 'true' , message: 'User verified', status: 200 }
+    		render json: { success: 'true' , username: @user.username, email: @user.email, gender: @user.gender, age_range: @user.age_range, maritial_status: @user.maritial_status, salary: @user.salary, user_type: @user.user_type , status: 200 }
 	    else
 	      render json: { success: 'false' , message: 'User varification failed', status: 401 }
    		end
@@ -21,8 +21,8 @@ class Api::V1::SessionsController < Api::V1::ApplicationController
   private
 
   def verify_user(email, password)
-    user = User.find_by(email: email)
-    if user && user.authenticate(params[:password])
+    @user = User.find_by(email: email)
+    if @user && @user.authenticate(params[:password])
       return true
     else
       return false
