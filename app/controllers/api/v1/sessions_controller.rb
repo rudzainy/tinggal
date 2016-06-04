@@ -1,7 +1,9 @@
 class Api::V1::SessionsController < Api::V1::ApplicationController
 
+  # http://tinggal.herokuapp.com/api/v1/login?email=rudzainy@rudzainy.com&password=123456&reg_type=0
+
   def create
-    if params[:reg_key].to_i == 0 # user registered using email
+    if params[:reg_type] == "0" # user registered using email
     	if verify_user(params[:email], params[:password])
     		render json: { success: 'true' , message: 'User verified', status: 200 }
 	    else
