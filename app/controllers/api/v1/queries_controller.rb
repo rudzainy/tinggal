@@ -29,6 +29,16 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     end
   end
 
+  # http://tinggal.herokuapp.com/api/v1/verify_agent?email=tinggalapp@gmail.com&agent_id=12345
+
+  def verify_agent
+    agent = Agent.find_by(email: params[:email], agent_id: params[:agent_id])
+    if agent
+      render json: { success: 'true' , message: "Agent code verified", status: 200 }
+    else
+      render json: { success: 'false' , message: "Verification failed", status: 400 }
+    end
+
   private
 
   def query_params

@@ -9,6 +9,7 @@ namespace :api do
       get '/login', to: 'sessions#create'
       get '/query_listings', to: 'queries#query_listings'
       get '/listing', to: 'queries#listing'
+      get '/verify_agent', to: 'queries#verify_agent'
     end
   end
 end
