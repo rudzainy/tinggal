@@ -38,6 +38,7 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     else
       render json: { success: 'false' , message: "Verification failed", status: 400 }
     end
+  end
 
   private
 
