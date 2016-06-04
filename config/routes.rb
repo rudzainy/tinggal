@@ -10,6 +10,8 @@ namespace :api do
       get '/query_listings', to: 'queries#query_listings'
       get '/listing', to: 'queries#listing'
       get '/verify_agent', to: 'queries#verify_agent'
+      get '/create_appointment', to: 'appointments#create'
+      get '/all_appointments', to: 'appointments#show'
     end
   end
 end

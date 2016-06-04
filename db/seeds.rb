@@ -2,6 +2,9 @@ File.open('db/listings.json', 'r') do |file|
   file.each do |line|
     listing = JSON.parse line
     Listing.create! listing
+    if rand(100) % 7 == 0
+    	listing.update(agent_id: "12345")
+    end
   end
 end
 
