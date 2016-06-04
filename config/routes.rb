@@ -8,6 +8,7 @@ namespace :api do
       get '/update_user', to: 'users#update'
       get '/login', to: 'sessions#create'
       get '/query_listings', to: 'queries#query_listings'
+      get '/listing', to: 'queries#listing'
     end
   end
 end

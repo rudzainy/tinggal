@@ -18,6 +18,8 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     render json: { success: 'true' , listings: listing_sizes, status: 200 }
   end
 
+  # http://tinggal.herokuapp.com/api/v1/listing?id=5
+
   def listing
     listing = Listing.find(params[:id])
     if listing
