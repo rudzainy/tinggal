@@ -32,7 +32,7 @@ class Api::V1::UsersController < Api::V1::ApplicationController
     user = User.find_by_email(params[:email])
     if user
       user.update(update_params)
-      render json: { success: 'true' , message: 'Successfully updated user', status: 200 }
+      render json: { success: 'true' , username: user.username, email: user.email, gender: user.gender, age_range: user.age_range, maritial_status: user.maritial_status, salary: user.salary, user_type: user.user_type , status: 200 }
     else
       render json: { success: 'false' , message: 'Update failed', status: 400 }
     end
