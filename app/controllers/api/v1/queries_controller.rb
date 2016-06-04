@@ -35,7 +35,7 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     agent = Agent.find_by(email: params[:email], agent_id: params[:agent_id])
     if agent
       User.find_by_email(params[:email]).update(user_type: "agent")
-      render json: { success: 'true' , message: "Agent code verified", status: 200 }
+      render json: { success: 'true' , username: user.username, email: user.email, gender: user.gender, age_range: user.age_range, maritial_status: user.maritial_status, salary: user.salary, user_type: user.user_type , status: 200 }
     else
       render json: { success: 'false' , message: "Verification failed", status: 400 }
     end

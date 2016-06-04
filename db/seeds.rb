@@ -27,10 +27,40 @@ File.open('db/propertyType.json', 'r') do |file|
 end
 
 User.create!([
-  { username: "Rudzainy", email: "rudzainy@rudzainy.com", password: "123456", gender: "male", age_range: "20-30", maritial_status: "single", salary: "10000", user_type: "user" },
-  { username: "Hainum", email: "hainum23@hotmail.com", password: "123", gender: "male", age_range: "20-30", maritial_status: "single", salary: "10000", user_type: "user" }
+  { username: "Rudzainy",
+  	email: "rudzainy@rudzainy.com",
+  	password: "123456",
+  	gender: "male",
+  	age_range: "20-30",
+  	maritial_status: "single",
+  	salary: "10000",
+  	user_type: "user"
+  },
+  { username: "Hainum",
+  	email: "hainum23@hotmail.com",
+  	password: "123",
+  	gender: "male",
+  	age_range: "20-30",
+  	maritial_status: "single",
+  	salary: "10000",
+  	user_type: "user"
+  }
 ])
 
 Agent.create!([
   { agent_id: "12345", email: "tinggalapp@gmail.com" }
 ])
+
+50.times do
+	User.create!([
+		{ username: Faker::Internet.user_name,
+			email: Faker::Internet.email,
+	  	password: "123456",
+	  	gender: ["male", "female"].sample,
+	  	age_range: "20-30",
+	  	maritial_status: "single",
+	  	salary: "10000",
+	  	user_type: "user"
+	  }
+	])
+end
