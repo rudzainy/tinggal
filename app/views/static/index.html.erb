@@ -1,9 +1,10 @@
-<div class="container">
-	<div class="fullscreen-bg">
-		<%= video_tag(["waterbnb.webm", "waterbnb.mp4"], class: "fullscreen-bg__video", poster: "home_videoframe.png", autoplay: true, loop: true )%>
-	</div>
-	<div style="text-align: center; margin-top: 100px;">
-		<%= image_tag "Tinggal.png" %><br>
-		<%= image_tag "google_play_icon.png", class: 'play-img' %>
+<div class="wrapper">
+	<%= video_tag(["waterbnb.webm", "waterbnb.mp4"], class: "fullscreen-bg__video", poster: "home_videoframe.png", autoplay: true, loop: true )%>
+	<div style="text-align: center; margin-top: 100px;" class="content">
+		<%= image_tag "Tinggal.png", class: 'logo' %><br>
+		<div class="text">
+			<h3>It's a Tinder for Property!</h3>
+			<%= image_tag "google_play_icon.png", class: 'play-img' %>
+		</div>
 	</div>
 </div>
