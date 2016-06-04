@@ -31,6 +31,5 @@ User.create!([
 ])
 
 Agent.create!([
-  { agent_id: "12345" },
-  { agent_id: "67890" }
+  { agent_id: "12345", email: "tinggalapp@gmail.com" }
 ])

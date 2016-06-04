@@ -41,6 +41,6 @@ class Api::V1::UsersController < Api::V1::ApplicationController
   private
 
   def update_params
-    params.permit(:email, :password, :username, :gender, :age_range, :maritial_status, :salary, :user_type)
+    params.permit(:email, :password, :username, :gender, :age_range, :maritial_status, :salary, :user_type, :location)
   end
 end

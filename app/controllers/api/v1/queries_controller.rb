@@ -18,6 +18,14 @@ class Api::V1::QueriesController < Api::V1::ApplicationController
     render json: { success: 'true' , listings: listing_sizes, status: 200 }
   end
 
+  def listing
+    listing = Listing.find(params[:id])
+    if listing
+      render json: { success: 'true' , listings: listing, status: 200 }
+    else
+      render json: { success: 'false' , message: "Listing not found", status: 400 }
+    end
+
   private
 
   def query_params
