@@ -1,0 +1,51 @@
+{"ProType":"AL","ProCatType":"A","ProGrpType":"G","Description":"Agricultural Land"}
+{"ProType":"CL","ProCatType":"C","ProGrpType":"C","Description":"Commercial Land"}
+{"ProType":"HR","ProCatType":"C","ProGrpType":"H","Description":"Hotel/Resort"}
+{"ProType":"BC","ProCatType":"C","ProGrpType":"S","Description":"Business Centre"}
+{"ProType":"CB","ProCatType":"C","ProGrpType":"S","Description":"Commercial Bungalow"}
+{"ProType":"CD","ProCatType":"C","ProGrpType":"S","Description":"Commercial Semi-D"}
+{"ProType":"DS","ProCatType":"C","ProGrpType":"S","Description":"Designer Suites"}
+{"ProType":"OF","ProCatType":"C","ProGrpType":"S","Description":"Office"}
+{"ProType":"RO","ProCatType":"C","ProGrpType":"S","Description":"Retail-Office"}
+{"ProType":"RS","ProCatType":"C","ProGrpType":"S","Description":"Retail Space"}
+{"ProType":"SF","ProCatType":"C","ProGrpType":"S","Description":"Sofo"}
+{"ProType":"SH","ProCatType":"C","ProGrpType":"S","Description":"Shop"}
+{"ProType":"SO","ProCatType":"C","ProGrpType":"S","Description":"Shop-Office"}
+{"ProType":"SS","ProCatType":"C","ProGrpType":"S","Description":"Soho"}
+{"ProType":"SV","ProCatType":"C","ProGrpType":"S","Description":"Sovo"}
+{"ProType":"FD","ProCatType":"I","ProGrpType":"F","Description":"Detached factory"}
+{"ProType":"FK","ProCatType":"I","ProGrpType":"F","Description":"Link factory"}
+{"ProType":"FS","ProCatType":"I","ProGrpType":"F","Description":"Semi- D factory"}
+{"ProType":"FT","ProCatType":"I","ProGrpType":"F","Description":"Factory"}
+{"ProType":"LI","ProCatType":"I","ProGrpType":"F","Description":"Light Industrial"}
+{"ProType":"WH","ProCatType":"I","ProGrpType":"F","Description":"Warehouse"}
+{"ProType":"IL","ProCatType":"I","ProGrpType":"I","Description":"Industrial Land"}
+{"ProType":"AD","ProCatType":"R","ProGrpType":"A","Description":"Apartment Duplex"}
+{"ProType":"AP","ProCatType":"R","ProGrpType":"A","Description":"Apartment"}
+{"ProType":"FL","ProCatType":"R","ProGrpType":"A","Description":"Flat"}
+{"ProType":"BG","ProCatType":"R","ProGrpType":"B","Description":"Bungalow House"}
+{"ProType":"BL","ProCatType":"R","ProGrpType":"B","Description":"Bungalow Land"}
+{"ProType":"CH","ProCatType":"R","ProGrpType":"B","Description":"Cluster Homes"}
+{"ProType":"LB","ProCatType":"R","ProGrpType":"B","Description":"Link Bungalow"}
+{"ProType":"SD","ProCatType":"R","ProGrpType":"B","Description":"Semi-detached House"}
+{"ProType":"TV","ProCatType":"R","ProGrpType":"B","Description":"Twin Villas"}
+{"ProType":"TW","ProCatType":"R","ProGrpType":"B","Description":"Twin Courtyard Villa"}
+{"ProType":"ZB","ProCatType":"R","ProGrpType":"B","Description":"Zero-Lot Bungalow"}
+{"ProType":"CO","ProCatType":"R","ProGrpType":"E","Description":"Condominium"}
+{"ProType":"E2","ProCatType":"R","ProGrpType":"E","Description":"Duplex"}
+{"ProType":"E3","ProCatType":"R","ProGrpType":"E","Description":"Triplex"}
+{"ProType":"ES","ProCatType":"R","ProGrpType":"E","Description":"Soho"}
+{"ProType":"PH","ProCatType":"R","ProGrpType":"E","Description":"Penthouse"}
+{"ProType":"SA","ProCatType":"R","ProGrpType":"E","Description":"Service Apartment"}
+{"ProType":"SR","ProCatType":"R","ProGrpType":"E","Description":"Serviced Residence"}
+{"ProType":"TC","ProCatType":"R","ProGrpType":"E","Description":"Townhouse Condo"}
+{"ProType":"RL","ProCatType":"R","ProGrpType":"R","Description":"Residential Land"}
+{"ProType":"1T","ProCatType":"R","ProGrpType":"T","Description":"1-sty Terrace/Link House"}
+{"ProType":"2T","ProCatType":"R","ProGrpType":"T","Description":"2-sty Terrace/Link House"}
+{"ProType":"3T","ProCatType":"R","ProGrpType":"T","Description":"3-sty Terrace/Link House"}
+{"ProType":"5T","ProCatType":"R","ProGrpType":"T","Description":"1.5-sty Terrace/Link House"}
+{"ProType":"6T","ProCatType":"R","ProGrpType":"T","Description":"2.5-sty Terrace/Link House"}
+{"ProType":"7T","ProCatType":"R","ProGrpType":"T","Description":"3.5-sty Terrace/Link House"}
+{"ProType":"8T","ProCatType":"R","ProGrpType":"T","Description":"4-5 sty Terrace/Link House"}
+{"ProType":"9T","ProCatType":"R","ProGrpType":"T","Description":"4-sty Terrace/Link House"}
+{"ProType":"TH","ProCatType":"R","ProGrpType":"T","Description":"Townhouse"}

@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+File.open('listings.json', 'r') do |file|
+  file.each do |line|
+    listing = JSON.parse line
+    Listing.create! listing
+  end
+end
+
+File.open('propertyCategoryType.json', 'r') do |file|
+  file.each do |line|
+    item = JSON.parse line
+    PropertyCategoryType.create! item
+  end
+end
+
+File.open('propertyGroupType.json', 'r') do |file|
+  file.each do |line|
+    item = JSON.parse line
+    PropertyGroupType.create! item
+  end
+end
+
+File.open('propertyType.json', 'r') do |file|
+  file.each do |line|
+    item = JSON.parse line
+    PropertyType.create! item
+  end
+end
+

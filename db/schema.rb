@@ -11,16 +11,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160604075613) do
+ActiveRecord::Schema.define(version: 20160604142452) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "agents", force: :cascade do |t|
+    t.string "agent_id"
+  end
 
   create_table "list_users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id",    null: false
     t.integer  "listing_id", null: false
+    t.integer  "like"
+  end
+
+  create_table "listings", force: :cascade do |t|
+    t.string "ListingID"
+    t.string "BuildUp"
+    t.string "IsSale"
+    t.string "IsRent"
+    t.string "Postalcode"
+    t.string "AskingPrice"
+    t.string "RentalPrice"
+    t.string "NoOfBedRooms"
+    t.string "NoOfBathRooms"
+    t.string "City"
+    t.string "Township"
+    t.string "StateCode"
+    t.string "ProType"
+    t.string "TenureCode"
+    t.string "AdvertiseDate"
+    t.string "PostedDate"
+    t.string "LastModified"
+    t.string "CreatedDate"
+    t.string "BuildingName"
+  end
+
+  create_table "property_category_types", force: :cascade do |t|
+    t.string "ProCatType"
+    t.string "Description"
+  end
+
+  create_table "property_group_types", force: :cascade do |t|
+    t.string "ProGrpType"
+    t.string "ProCatType"
+    t.string "Description"
+  end
+
+  create_table "property_types", force: :cascade do |t|
+    t.string "ProType"
+    t.string "ProCatType"
+    t.string "ProGrpType"
+    t.string "Description"
   end
 
   create_table "tags", force: :cascade do |t|
@@ -39,6 +84,12 @@ ActiveRecord::Schema.define(version: 20160604075613) do
     t.string   "reg_type",        default: "0"
     t.string   "reg_key"
     t.string   "password_digest"
+    t.string   "picture_url"
+    t.string   "gender"
+    t.string   "age_range"
+    t.string   "maritial_status"
+    t.integer  "salary"
+    t.string   "user_type"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", using: :btree

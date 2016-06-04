@@ -25,4 +25,16 @@ class Api::V1::UsersController < Api::V1::ApplicationController
       render json: { success: 'false' , message: 'Error! Wrong registration type', status: 422 }
     end
   end
+
+  def update
+    user = User.find_by_email(params[:email])
+    user.update(update_params)
+    render(json: Api::V1::UserSerializer.new(user).to_json)
+  end
+
+  private
+
+  def update_params
+    params.permit(:email, :password, :username, :gender, :age_range, :maritial_status, :salary, :user_type)
+  end
 end

@@ -1,0 +1,11 @@
+{"ProGrpType":"G","ProCatType":"A","Description":"Agricultural Land"}
+{"ProGrpType":"C","ProCatType":"C","Description":"Commercial Land"}
+{"ProGrpType":"H","ProCatType":"C","Description":"Hotel/Resort"}
+{"ProGrpType":"S","ProCatType":"C","Description":"Shop/Office/Retail Space"}
+{"ProGrpType":"F","ProCatType":"I","Description":"Factory/Warehouse"}
+{"ProGrpType":"I","ProCatType":"I","Description":"Industrial Land"}
+{"ProGrpType":"A","ProCatType":"R","Description":"Apartment/Flat"}
+{"ProGrpType":"B","ProCatType":"R","Description":"Semi-D/Bungalow"}
+{"ProGrpType":"E","ProCatType":"R","Description":"Condo/Serviced Residence"}
+{"ProGrpType":"R","ProCatType":"R","Description":"Residential Land"}
+{"ProGrpType":"T","ProCatType":"R","Description":"Terrace/Link/Townhouse"}
