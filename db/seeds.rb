@@ -54,7 +54,7 @@ Agent.create!([
   { agent_id: "12345", email: "tinggalapp@gmail.com" }
 ])
 
-50.times do
+100.times do
 	User.create!([
 		{ username: Faker::Internet.user_name,
 			email: Faker::Internet.email,
@@ -68,7 +68,7 @@ Agent.create!([
 	])
 end
 
-User.each do |user|
+User.all.each do |user|
 	rand(100).times do
 		ListUser.create(user_id: user.id, listing_id: rand(1000), like: [0, 1].sample)
 	end
