@@ -67,3 +67,9 @@ Agent.create!([
 	  }
 	])
 end
+
+User.each do |user|
+	rand(100).times do
+		ListUser.create(user_id: user.id, listing_id: rand(1000), like: [0, 1].sample)
+	end
+end

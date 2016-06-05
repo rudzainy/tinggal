@@ -12,6 +12,8 @@ namespace :api do
       get '/verify_agent', to: 'queries#verify_agent'
       get '/create_appointment', to: 'appointments#create'
       get '/all_appointments', to: 'appointments#show'
+      get '/like', to: 'list_users#like'
+      get '/dislike', to: 'list_users#dislike'
     end
   end
 end
