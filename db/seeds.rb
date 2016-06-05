@@ -5,9 +5,9 @@ File.open('db/listings.json', 'r') do |file|
     if rand(100) % 7 == 0
     	listing.update(agent_id: "12345")
     end
-    if listing.BuildingName == "" or listing.BuildingName == nil
-    	listing.update(BuildingName: Faker::Address.street_name)
-    end
+    # if listing.BuildingName == "" or listing.BuildingName == nil
+    # 	listing.update(BuildingName: Faker::Address.street_name)
+    # end
   end
 end
 
